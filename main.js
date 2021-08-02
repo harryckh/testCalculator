@@ -20,9 +20,9 @@ function generate() {
         var t = document.createElement("p")
         var value = calc(o, n)
         if(value > 0)
-            t.innerHTML = "increased by " + value + "%"
+            t.innerHTML = "increased by " + value.toFixed(4) + "%"
         else
-            t.innerHTML = "decreased by " + value + "%"
+            t.innerHTML = "decreased by " + value.toFixed(4) + "%"
         
         document.getElementById("text").appendChild(t)
     }
